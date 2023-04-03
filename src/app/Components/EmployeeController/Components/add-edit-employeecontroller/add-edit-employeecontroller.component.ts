@@ -247,7 +247,7 @@ export class AddEditEmployeecontrollerComponent {
             },
           });
       } else {
-        this._empService.addEmployee(this.Empregister.value).subscribe({
+        this._empService.addEmployee(this.Empregister?.value).subscribe({
           next: (val: any) => {
             this._coreService.openSnackBar('Employee added successfully');
             this._dialogRef.close(true);
